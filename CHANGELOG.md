@@ -5,4 +5,4 @@
 
   * Created the package,
   * Initial build,
-  * ...,
+  * Release.
