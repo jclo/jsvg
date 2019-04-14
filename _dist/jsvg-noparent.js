@@ -1,5 +1,5 @@
 /*! ****************************************************************************
- * JSVG v0.0.0
+ * JSVG v0.0.1
  *
  * A tiny Javascript library intended to create and manage SVG elements in the DOM.
  * (you can download it from npm or github repositories)
@@ -1705,7 +1705,7 @@
     };
 
     // Current version of the library:
-    JSVG.VERSION = '0.0.0';
+    JSVG.VERSION = '0.0.1';
 
 
     // -- Public Static Methods ------------------------------------------------
