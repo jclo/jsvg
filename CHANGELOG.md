@@ -3,7 +3,7 @@
 ### 0.0.2 (May 4, 2019)
 
   * Added the methods appendBefore and appendAfter,
-  * ...,
+  * Release.
 
 
 ### 0.0.1 (April 14, 2019)
