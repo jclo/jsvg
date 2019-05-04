@@ -1,5 +1,5 @@
 /*! ****************************************************************************
- * JSVG v0.0.1
+ * JSVG v0.0.2
  *
  * A tiny Javascript library intended to create and manage SVG elements in the DOM.
  * (you can download it from npm or github repositories)
@@ -1598,6 +1598,8 @@
    *  . parent               moves to parent SVG element,
    *  . firstParent          moves to the first parent,
    *  . append               appends an SVG element and selects it,
+   *  . appendBefore         appends a new SVG el. before the reference SVG el.,
+   *  . appendAfter          appends a new SVG el. after the reference SVG el.,
    *  . appendHTML           appends a foreignObject to svg and selects it,
    *  . replace              replaces the current SVG element,
    *  . remove               removes the given SVG element,
@@ -1709,7 +1711,7 @@
     };
 
     // Current version of the library:
-    JSVG.VERSION = '0.0.1';
+    JSVG.VERSION = '0.0.2';
 
 
     // -- Public Static Methods ------------------------------------------------
@@ -1889,6 +1891,46 @@
       append: function(svgElement) {
         var el = document.createElementNS(SVG_NS, svgElement);
         this[0] = this[0].appendChild(el);
+        return this;
+      },
+
+      /**
+       * Appends a new SVG element before the passed-in SVG element.
+       *
+       * @method (arg1, arg2)
+       * @public
+       * @param {Object}      the SVG element to add,
+       * @param {Object}      the reference SVG element,
+       * @returns {Object}    returns this,
+       * @since 0.0.0
+       */
+      appendBefore: function(newSvgElement, svgElement) {
+        var newChild = document.createElementNS(SVG_NS, newSvgElement)
+          , child = this[0].querySelector(svgElement)
+          ;
+
+        this[0].insertBefore(newChild, child);
+        this[0] = newChild;
+        return this;
+      },
+
+      /**
+       * Appends a new SVG element after the passed-in SVG element.
+       *
+       * @method (arg1, arg2)
+       * @public
+       * @param {Object}      the SVG element to add,
+       * @param {Object}      the reference SVG element,
+       * @returns {Object}    returns this,
+       * @since 0.0.0
+       */
+      appendAfter: function(newSvgElement, svgElement) {
+        var newChild = document.createElementNS(SVG_NS, newSvgElement)
+          , child = this[0].querySelector(svgElement).nextElementSibling
+          ;
+
+        this[0].insertBefore(newChild, child);
+        this[0] = newChild;
         return this;
       },
 

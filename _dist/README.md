@@ -67,14 +67,14 @@ JSVG.noConflict();
 
 | Static Methods       | Description |
 |:---------------------|:------------|
-| noConflict           | returns the JSVG variable to its previous owner, |
-| addClass             | adds an attribute of class to the SVG element, |
-| removeClass          | removes an attribute of class to the SVG element, |
-| transformAttrToObj   | converts an SVG transform attributes string to an object, |
-| transformAttrToStr   | converts an SVG transform attributes string to an object, |
+| noConflict           | returns the JSVG variable to its previous owner |
+| addClass             | adds an attribute of class to the SVG element |
+| removeClass          | removes an attribute of class to the SVG element |
+| transformAttrToObj   | converts an SVG transform attributes string to an object |
+| transformAttrToStr   | converts an SVG transform attributes string to an object |
 | draw.arc             | draws an arc, |
 | draw.line            | draws polygonal lines (deprecated), |
-| draw.multipolyline   | draws a set of polylines, |
+| draw.multipolyline   | draws a set of polylines |
 
 
 
@@ -89,25 +89,27 @@ JSVG.noConflict();
 
 | Chaining Methods  | Description |
 |:------------------|:------------|
-| select            | selects an SVG element, |
-| parent            | moves to parent SVG element, |
-| firstParent       | moves to the first parent, |
-| append            | appends an SVG element and selects it, |
-| appendHTML        | appends a foreignObject to svg and selects it, |
-| replace           | replaces the current SVG element, |
-| remove            | removes the given SVG element, |
-| removeAllChilds   | removes all the children of the selected element, |
-| animate           | sets animation transition parameters, |
-| listen            | attaches an event listener to the SVG element, |
-| listenOnce        | attaches a fired once event listener to the SVG element, |
-| unlisten          | removes an event listener to the SVG element, |
-| alink             | adds a link attribute to the SVG selected element, |
-| attr              | adds attributes to the selected SVG element, |
-| rmattr            | removes the given attribute from the selected SVG element, |
-| text              | adds text to the selected SVG element, |
-| addClass          | adds a class value to the selected SVG element, |
-| removeClass       | removes a class value to the selected SVG element, |
-| toggleClass       | toggles a class value to the selected SVG element, |
+| select            | selects an SVG element |
+| parent            | moves to parent SVG element |
+| firstParent       | moves to the first parent |
+| append            | appends an SVG element and selects it |
+| appendBefore      | appends an SVG element before the reference SVG element and selects it |
+| appendAfter       | appends an SVG element after the reference SVG element and selects it |
+| appendHTML        | appends a foreignObject to svg and selects it |
+| replace           | replaces the current SVG element |
+| remove            | removes the given SVG element |
+| removeAllChilds   | removes all the children of the selected element |
+| animate           | sets animation transition parameters |
+| listen            | attaches an event listener to the SVG element |
+| listenOnce        | attaches a fired once event listener to the SVG element |
+| unlisten          | removes an event listener to the SVG element |
+| alink             | adds a link attribute to the SVG selected element |
+| attr              | adds attributes to the selected SVG element |
+| rmattr            | removes the given attribute from the selected SVG element |
+| text              | adds text to the selected SVG element |
+| addClass          | adds a class value to the selected SVG element |
+| removeClass       | removes a class value to the selected SVG element |
+| toggleClass       | toggles a class value to the selected SVG element |
 
 *chaining methods return **this***.
 
