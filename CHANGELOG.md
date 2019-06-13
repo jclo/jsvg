@@ -3,7 +3,7 @@
 ### 0.0.3 (June 13, 2019)
 
   * Fixed an issue with the method listenOnce not stopping the events properly,
-  * ...,
+  * Release.
 
 
 ### 0.0.2 (May 4, 2019)
