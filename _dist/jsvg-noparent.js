@@ -1,5 +1,5 @@
 /*! ****************************************************************************
- * JSVG v0.0.2
+ * JSVG v0.0.3
  *
  * A tiny Javascript library intended to create and manage SVG elements in the DOM.
  * (you can download it from npm or github repositories)
@@ -1707,7 +1707,7 @@
     };
 
     // Current version of the library:
-    JSVG.VERSION = '0.0.2';
+    JSVG.VERSION = '0.0.3';
 
 
     // -- Public Static Methods ------------------------------------------------
@@ -2049,12 +2049,13 @@
        * @since 0.0.0
        */
       listenOnce: /* istanbul ignore next */ function(event, handler) {
-        var that = this;
+        var el = this[0];
+        function localHandler(e) {
+          el.removeEventListener(event, localHandler);
+          handler(e);
+        }
         if (typeof event === 'string' && typeof handler === 'function') {
-          this[0].addEventListener(event, function(e) {
-            that[0].removeEventListener(event, handler);
-            handler(e);
-          });
+          el.addEventListener(event, localHandler);
         }
         return this;
       },
