@@ -1,5 +1,11 @@
 ### HEAD
 
+### 0.0.4 (November 4, 2019)
+
+  * Updated the dependencies,
+  * ...,
+
+
 ### 0.0.3 (June 13, 2019)
 
   * Fixed an issue with the method listenOnce not stopping the events properly,
