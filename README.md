@@ -10,6 +10,9 @@
 
 [![NPM install][npm-install-image]][npm-install-url]
 
+| `JSVG` is no longer maintained. Please, use [@mobilabs/svg](https://www.npmjs.com/package/@mobilabs/svg) now. |
+| --- |
+
 JSVG is a tiny Javascript library intended to create and manage SVG elements in the DOM. JSVG is designed to be embedded in another library.
 
 ## Quick Startup
