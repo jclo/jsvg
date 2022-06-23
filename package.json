@@ -52,7 +52,7 @@
     "gulp-replace": "1.0.0",
     "gulp-uglify": "3.0.2",
     "husky": "3.0.9",
-    "jsdom": "15.2.1",
+    "jsdom": "16.5.0",
     "mocha": "6.2.2",
     "nyc": "14.1.1",
     "opener": "1.5.1"
